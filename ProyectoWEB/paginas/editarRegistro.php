@@ -27,6 +27,7 @@ include "../SQL/bd.php";
 	<?php
 		$consulta= "SELECT * from pacientes";
 		$query=mysqli_query($con,$consulta);
+		AAAAAAAAAAAAAA
 	?>
 		<form>
 			
