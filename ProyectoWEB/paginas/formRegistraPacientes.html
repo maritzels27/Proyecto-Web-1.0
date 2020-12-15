@@ -1,0 +1,70 @@
+<!--
+Autores: 
+Maritzel Euan Solis
+Eduardo Emmanuel Ravell May
+Ana Carolina Martinez Maza
+Leilani Marrufo Novelo
+-->
+
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Registro de Pacientes</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<!-- Custom Theme files -->
+	<link href="../css/wickedpicker.css" rel="stylesheet" type='text/css' media="all" />
+	<link href="../css/style.css" rel='stylesheet' type='text/css' /><link href="../css/style.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+	<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+</head>
+<body>
+	<h1>Registro de nuevos pacientes</h1> 
+     <div class="bg-agile">
+		<div class="book-appointment">
+	<center>	<h2>Registrar paciente</h2> </center>
+		<INPUT  TYPE= 'SUBMIT' id='return' VALUE="Regresar al menu" onclick=location.href='../paginas/formMenu.php'>
+			<form action="../SQL/registrarSQL.php" method="post" name="appointment" id="appointment">	
+				<div id="resultados_ajax" class="gaps"></div>
+
+				<div class="left-agileits-w3layouts same">
+				<div class="gaps">
+					<p>Nombre del paciente</p>
+						<input type="text" name="nombre" placeholder="" required=""/>
+				</div>
+		        <div class="gaps">
+					<p>Cama Asignada</p>
+							<input type="text" name="cama" placeholder="" required="" />
+				</div>	
+				</div>
+
+				<div class="right-agileinfo same">
+				<div class="gaps">
+					<p>Habitacion</p>	
+						<select class="form-control" name="tipoHabitacion" required=""/ >
+							<option></option>
+							<option value="Sala General">Sala General</option>
+							<option value="Normal">Habitacion Normal</option>
+							<option value="Lujo">Habitacion de Lujo</option>	
+						</select>
+				</div>
+				<div class="gaps">
+					<p>Costo por dia</p>
+		           	 <input type="text" name="costo" placeholder="" required="" />
+				</div>
+				</div>
+
+				<input type="submit" value="Registrar paciente">
+		      
+			</form>
+				
+		</div>
+    </div>	
+
+</body>
+</html>
